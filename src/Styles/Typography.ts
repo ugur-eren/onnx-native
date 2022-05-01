@@ -1,46 +1,46 @@
 const Typography = {
   thin: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   extraLight: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   light: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   regular: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   medium: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   semiBold: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   bold: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   extraBold: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },
   black: {
-    fontFamily: '',
+    fontFamily: 'Arial',
     fontWeight: undefined,
     includeFontPadding: false,
   },

@@ -83,6 +83,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		13A5846C480F420EA5D60891 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* MoDNSimplified */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,14 +155,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		13A5846C480F420EA5D60891 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
