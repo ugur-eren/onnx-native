@@ -23,6 +23,7 @@
     "@react-navigation/native-stack": "^6.4.1",
     "@react-navigation/stack": "^6.1.1",
     "apisauce": "^2.1.5",
+    "buffer": "^6.0.3",
     "color": "3.2.1",
     "memoize-one": "^6.0.0",
     "onnxruntime-react-native": "^1.11.0",
