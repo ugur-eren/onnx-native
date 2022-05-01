@@ -29,7 +29,7 @@ const Landing: React.FC<Props> = () => {
   useEffect(() => {
     (async () => {
       const encoderModelPath = await LoadModel('dem_agem.ort');
-      const decoderModelPath = await LoadModel('dxfinal_urti_decoder.ort');
+      const decoderModelPath = await LoadModel('dxfinal_urti.ort');
 
       encoder.current = await InferenceSession.create(encoderModelPath);
       decoder.current = await InferenceSession.create(decoderModelPath);
