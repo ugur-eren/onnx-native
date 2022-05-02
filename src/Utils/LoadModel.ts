@@ -1,13 +1,27 @@
+/* eslint no-else-return: "off" */
+
 import RNFS from 'react-native-fs';
+import {IsAndroid} from './Helpers';
 
 export const LoadModel = async (modelName: string): Promise<string> => {
-  const outputPath = `${RNFS.CachesDirectoryPath}/${modelName}`;
+  if (IsAndroid) {
+    const outputPath = `${RNFS.CachesDirectoryPath}/${modelName}`;
 
-  console.log(JSON.stringify(await RNFS.readDir(RNFS.MainBundlePath), null, 2));
+    await RNFS.writeFile(outputPath, await RNFS.readFileRes(modelName, 'base64'), 'base64');
 
-  return;
+    return `file:${outputPath}`;
+  } else {
+    const inputPath = `${RNFS.MainBundlePath}/${modelName}`;
+    const outputPath = `${RNFS.LibraryDirectoryPath}/${modelName}-${Math.round(
+      Math.random() * 10 ** 6,
+    )}`;
 
-  await RNFS.writeFile(outputPath, await RNFS.readFileRes(modelName, 'base64'), 'base64');
+    await RNFS.copyFile(inputPath, outputPath);
 
-  return `file:${outputPath}`;
+    console.log(inputPath);
+    console.log(outputPath);
+    console.log(await RNFS.exists(outputPath));
+
+    return `file:${outputPath}`;
+  }
 };

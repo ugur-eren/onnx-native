@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* MoDNSimplifiedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* MoDNSimplifiedTests.m */; };
+		05090A000725458B8B0FF1C2 /* dem_agem.ort in Resources */ = {isa = PBXBuildFile; fileRef = F5DCB02F46D2430DA3F36B89 /* dem_agem.ort */; };
 		0C80B921A6F3F58F76C31292 /* libPods-MoDNSimplified.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-MoDNSimplified.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1F0351CDA5B546A68B6188B6 /* dxfinal_urti.ort in Resources */ = {isa = PBXBuildFile; fileRef = A1746E3B28CD42E492C495C4 /* dxfinal_urti.ort */; };
+		41412ACA6E814150B9D531F1 /* mnist.ort in Resources */ = {isa = PBXBuildFile; fileRef = 1FE9CCD5FE464AB79B1EC1A3 /* mnist.ort */; };
+		5EACC515C09B409CA342709E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2DD4FCE67E6C47BE9D3394A1 /* README.md */; };
 		7699B88040F8A987B510C191 /* libPods-MoDNSimplified-MoDNSimplifiedTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-MoDNSimplified-MoDNSimplifiedTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -37,13 +41,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = MoDNSimplified/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = MoDNSimplified/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-MoDNSimplified-MoDNSimplifiedTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoDNSimplified-MoDNSimplifiedTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FE9CCD5FE464AB79B1EC1A3 /* mnist.ort */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = mnist.ort; path = ../src/Models/mnist.ort; sourceTree = "<group>"; };
+		2DD4FCE67E6C47BE9D3394A1 /* README.md */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = README.md; path = ../src/Assets/Fonts/README.md; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-MoDNSimplified.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoDNSimplified.debug.xcconfig"; path = "Target Support Files/Pods-MoDNSimplified/Pods-MoDNSimplified.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-MoDNSimplified.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoDNSimplified.release.xcconfig"; path = "Target Support Files/Pods-MoDNSimplified/Pods-MoDNSimplified.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-MoDNSimplified-MoDNSimplifiedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoDNSimplified-MoDNSimplifiedTests.debug.xcconfig"; path = "Target Support Files/Pods-MoDNSimplified-MoDNSimplifiedTests/Pods-MoDNSimplified-MoDNSimplifiedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-MoDNSimplified.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MoDNSimplified.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = MoDNSimplified/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-MoDNSimplified-MoDNSimplifiedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoDNSimplified-MoDNSimplifiedTests.release.xcconfig"; path = "Target Support Files/Pods-MoDNSimplified-MoDNSimplifiedTests/Pods-MoDNSimplified-MoDNSimplifiedTests.release.xcconfig"; sourceTree = "<group>"; };
+		A1746E3B28CD42E492C495C4 /* dxfinal_urti.ort */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = dxfinal_urti.ort; path = ../src/Models/dxfinal_urti.ort; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F5DCB02F46D2430DA3F36B89 /* dem_agem.ort */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = dem_agem.ort; path = ../src/Models/dem_agem.ort; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 		13A5846C480F420EA5D60891 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2DD4FCE67E6C47BE9D3394A1 /* README.md */,
+				F5DCB02F46D2430DA3F36B89 /* dem_agem.ort */,
+				A1746E3B28CD42E492C495C4 /* dxfinal_urti.ort */,
+				1FE9CCD5FE464AB79B1EC1A3 /* mnist.ort */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -252,6 +264,10 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				5EACC515C09B409CA342709E /* README.md in Resources */,
+				05090A000725458B8B0FF1C2 /* dem_agem.ort in Resources */,
+				1F0351CDA5B546A68B6188B6 /* dxfinal_urti.ort in Resources */,
+				41412ACA6E814150B9D531F1 /* mnist.ort in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +508,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XA8FDWWMUA;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = MoDNSimplified/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XA8FDWWMUA;
 				INFOPLIST_FILE = MoDNSimplified/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

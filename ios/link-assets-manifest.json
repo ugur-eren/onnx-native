@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/Assets/Fonts/README.md",
+      "sha1": "85b5ba9763e908043b0c31f6927031bb4b66d56e"
+    },
+    {
+      "path": "src/Models/dem_agem.ort",
+      "sha1": "26c81077fa016bd820dfd66e4860499de962d551"
+    },
+    {
+      "path": "src/Models/dxfinal_urti.ort",
+      "sha1": "da9eb87cc914ecf65f252bf1ca4f905c45c5b095"
+    },
+    {
+      "path": "src/Models/mnist.ort",
+      "sha1": "d4ef735e767ed9f61bb55e4d43b4b0eddef6f7fc"
+    }
+  ]
+}
