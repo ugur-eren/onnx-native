@@ -32,7 +32,7 @@ const Landing: React.FC<Props> = () => {
       const decoderModelPath = await LoadModel('dxfinal_urti.ort');
 
       encoder.current = await InferenceSession.create(encoderModelPath);
-      decoder.current = await InferenceSession.create(decoderModelPath);
+      decoder.current = await InferenceSession.create(decoderModelPath, {});
     })();
   });
 
@@ -90,7 +90,7 @@ const Landing: React.FC<Props> = () => {
 
         <View style={{height: 16}} />
 
-        <Text>{output}</Text>
+        <Text selectable>{output}</Text>
       </ScrollView>
     </PageContainer>
   );
