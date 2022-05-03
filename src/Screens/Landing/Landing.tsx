@@ -5,19 +5,14 @@ import {Text} from '../../Components';
 import {PageContainer} from '../../Containers';
 import {OnboardingLandingScreenProps} from '../../Typings/NavigationTypes';
 import {LoadModel} from '../../Utils/LoadModel';
-import {Spacing} from '../../Styles';
+import styles from './Landing.styles';
 
 type Props = OnboardingLandingScreenProps;
 
 const STATE_SIZE = 30;
 
 const randomizeState = (stateArr: Float32Array): Float32Array => {
-  Object.keys(stateArr).forEach((key) => {
-    // eslint-disable-next-line no-param-reassign
-    stateArr[key as any] = Math.random();
-  });
-
-  return stateArr;
+  return stateArr.map(() => Math.random());
 };
 
 const Landing: React.FC<Props> = () => {
@@ -66,29 +61,29 @@ const Landing: React.FC<Props> = () => {
   };
 
   return (
-    <PageContainer withSafeArea withPadding style={{paddingVertical: Spacing.pagePadding}}>
+    <PageContainer withSafeArea withPadding style={styles.container}>
       <ScrollView>
         <Text fontSize={26} align="center">
           MoDN Simplified
         </Text>
 
-        <Text fontSize={22} align="center" style={{marginTop: 6, marginBottom: 16}}>
+        <Text fontSize={22} align="center" style={styles.subtitle}>
           Mock App
         </Text>
 
-        <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 12}}>
-          <Text style={{marginRight: 12}}>Constant state</Text>
+        <View style={styles.switch}>
+          <Text style={styles.switchLabel}>Constant state</Text>
 
           <Switch value={constantState} onValueChange={() => setConstantState((prev) => !prev)} />
         </View>
 
         <Button title="Disease Run" onPress={onDiseaseRunPress} />
 
-        <View style={{height: 16}} />
+        <View style={styles.gap} />
 
         <Button title="Question Run" onPress={onQuestionRunPress} />
 
-        <View style={{height: 16}} />
+        <View style={styles.gap} />
 
         <Text selectable>{output}</Text>
       </ScrollView>
