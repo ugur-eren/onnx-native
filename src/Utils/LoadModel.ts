@@ -7,7 +7,11 @@ export const LoadModel = async (modelName: string): Promise<string> => {
   if (IsAndroid) {
     const outputPath = `${RNFS.CachesDirectoryPath}/${modelName}`;
 
-    await RNFS.writeFile(outputPath, await RNFS.readFileRes(modelName, 'base64'), 'base64');
+    await RNFS.writeFile(
+      outputPath,
+      await RNFS.readFileAssets(`custom/${modelName}`, 'base64'),
+      'base64',
+    );
 
     return `file:${outputPath}`;
   } else {
