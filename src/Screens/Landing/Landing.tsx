@@ -28,14 +28,11 @@ const Landing: React.FC<Props> = () => {
 
   useEffect(() => {
     (async () => {
-      const encoderModelPath = await LoadModel('mnist.ort');
-      // const decoderModelPath = await LoadModel('dxfinal_urti.ort');
+      const encoderModelPath = await LoadModel('dem_agem.ort');
+      const decoderModelPath = await LoadModel('dxfinal_urti.ort');
 
-      console.log(encoderModelPath);
-      // console.log(decoderModelPath);
-
-      encoder.current = await InferenceSession.create(encoderModelPath, {});
-      // decoder.current = await InferenceSession.create(decoderModelPath, {});
+      encoder.current = await InferenceSession.create(encoderModelPath);
+      decoder.current = await InferenceSession.create(decoderModelPath, {});
     })();
   });
 
@@ -93,7 +90,7 @@ const Landing: React.FC<Props> = () => {
 
         <View style={{height: 16}} />
 
-        <Text>{output}</Text>
+        <Text selectable>{output}</Text>
       </ScrollView>
     </PageContainer>
   );

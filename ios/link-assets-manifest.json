@@ -12,10 +12,6 @@
     {
       "path": "src/Models/dxfinal_urti.ort",
       "sha1": "da9eb87cc914ecf65f252bf1ca4f905c45c5b095"
-    },
-    {
-      "path": "src/Models/mnist.ort",
-      "sha1": "d4ef735e767ed9f61bb55e4d43b4b0eddef6f7fc"
     }
   ]
 }
